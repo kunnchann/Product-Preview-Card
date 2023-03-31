@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --font-family-Montserrat: "Montserrat", sans-serif;
+  --font-family-Fraunces: "Fraunces", serif;
+  --font-size-para: 14px;
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream-color: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+body {
+  background: #f3eae3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.container {
+  display: flex;
+}
+.box-1 {
+  height: 465px;
+}
+.box-2 {
+  border-radius: 0 9.5px 9.5px 0;
+  padding: 30px 50px 30px 23px;
+  background: var(--white-color);
+}
+img {
+  height: 100%;
+  border-radius: 9.5px 0 0 9.5px;
+}
+h1 {
+  font-family: var(--font-family-Montserrat);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 3.5px;
+}
+h2 {
+  font-family: var(--font-family-Fraunces);
+  font-size: 30px;
+  color: var(--dark-blue);
+  width: 200px;
+  line-height: 33.5px;
+}
+p {
+  font-family: var(--font-family-Montserrat);
+  width: 230px;
+  color: var(--dark-grayish-blue);
+  font-size: var(--font-size-para);
+  line-height: 24.5px;
+}
+b {
+  font-family: var(--font-family-Fraunces);
+  font-size: 32px;
+  color: var(--dark-cyan);
+}
+span {
+  font-family: var(--font-family-Montserrat);
+  font-size: 20px;
+  color: var(--dark-grayish-blue);
+  text-decoration-line: line-through;
+  line-height: -20px;
+}
+button {
+  font-family: var(--font-family-Montserrat);
+  border-style: none;
+  display: block;
+  padding: 15px 63px;
+  background: var(--dark-cyan);
+  color: var(--white-color);
+  font-size: 15px;
+  border-radius: 4.5px;
+  cursor: pointer;
+}
+.price {
+  width: 223px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+
+@media (max-width: 740px) {
+  .box-1 {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    height: 136%;
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 9.5px 9.5px 0 0;
+  }
+  .container {
+    padding: 50px 0;
+    flex-direction: column;
+  }
+  .box-2 {
+    width: 300px;
+    border-radius: 0 0 9.5px 9.5px;
+    padding: 15px;
+  }
+  .price {
+    width: 181px;
+  }
+  h1 {
+    font-size: 10px;
+  }
+  h2 {
+    width: 238px;
+    font-size: 27px;
+  }
+  p {
+    width: 270px;
+    font-size: 13px;
+  }
+  b {
+    font-size: 26px;
+  }
+  span {
+    font-size: 15px;
+  }
+  button {
+    margin: 0 auto;
+  }
+  .mb-25 {
+    margin-bottom: 11px;
+  }
+}
